@@ -1,0 +1,39 @@
+Exercice réalisé sur le site SQLite editor
+
+
+CREATE TABLE edusign (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	firstname TEXT NOT NULL,
+    email TEXT NOT NULL,
+    created_at DATETIME
+);
+
+INSERT INTO edusign (firstname, email, created_at)
+VALUES ('Ada', 'ada@adatechschool.com', '2024-05-08 09:30:00');
+
+INSERT INTO edusign (firstname, email, created_at)
+VALUES ('Grace', 'grace@adatechschool.com', '2024-05-08 09:30:00');
+
+INSERT INTO edusign (firstname, email, created_at)
+VALUES ('Dorothy', 'dorothy@adatechschool.com', '2024-05-08 09:30:00');
+
+INSERT INTO edusign (firstname, email, created_at)
+VALUES ('Ella', 'ella@adatechschool.com', '2024-05-08 09:30:00');
+
+INSERT INTO edusign (firstname, email, created_at)
+VALUES ('Grace', 'grace@adatechschool.com', '2024-05-09 09:30:00');
+
+INSERT INTO edusign (firstname, email, created_at)
+VALUES ('Ella', 'ella@adatechschool.com', '2024-05-09 09:30:00');
+
+CREATE TABLE users (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	prénom TEXT NOT NULL,
+    nom TEXT NOT NULL,
+    email TEXT NOT NULL
+);
+
+INSERT INTO users (prénom, nom, email) VALUES ('Ada', 'Lovelace', 'ada@test.fr');
+INSERT INTO users (prénom, nom, email) VALUES ('Beatrice', 'Worsley', 'bea@test.fr');
+INSERT INTO users (prénom, nom, email) VALUES ('Bella', 'Guerin', 'bella@test.fr');
+INSERT INTO users (prénom, nom, email) VALUES ('Barbara', 'Chase', 'barbara@test.fr');
